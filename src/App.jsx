@@ -20,9 +20,11 @@ function App() {
           <div className="row">
             <div className="col-md-6 mt-5 mx-auto">
               <h1 className='text-center text-success'>Task Management </h1>
+              <center>
                <Button variant="primary" onClick={handleShow}>
                  Add Task
               </Button>
+              </center>
 
               <Modal show={show} onHide={handleClose} animation={false}>
                 <Modal.Header closeButton>
