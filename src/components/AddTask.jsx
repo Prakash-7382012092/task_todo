@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addTask } from '../features/taskSlice';
 import { v4 as uuidv4 } from 'uuid';
 
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 
 
 
@@ -12,8 +15,11 @@ const AddTask = () => {
    console.log(tasks.length);
     const dispatch = useDispatch();
     const [title,setTitle]  = useState('');
+     const [show, setShow] = useState(false);
     const [description,setDescription]= useState('');
     const [status,setStatus] = useState('');
+      const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
     const handleSubmit = (e)=>{
         e.preventDefault();     
         dispatch(addTask({id:tasks.length+1,title,description,status}));        

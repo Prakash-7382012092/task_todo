@@ -9,6 +9,8 @@ const EditTask = ({ task }) => {
   const [title, setTitle] = useState(task.title);
   const [description, setDescription] = useState(task.description);
   const [status, setStatus] = useState(task.status);
+    const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleEdit = (e) => {
     e.preventDefault(); // Prevent form refresh
