@@ -30,6 +30,7 @@ const AddTask = () => {
         handleClose();
     }
   return (
+    <>
     <div>
       
       <form className='mb-6' onSubmit={handleSubmit}>
@@ -59,6 +60,7 @@ const AddTask = () => {
 
       </form>
     </div>
+    </>
   )
 }
 
