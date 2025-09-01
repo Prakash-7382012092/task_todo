@@ -20,8 +20,9 @@ function App() {
           <div className="row">
             <div className="col-md-6 mt-5 mx-auto">
               <h1 className='text-center text-success'>Task Management </h1>
+               
               <center>
-               <Button variant="primary" onClick={handleShow}>
+               <Button className='btn btn-success' onClick={handleShow}>
                  Add Task
               </Button>
               </center>
@@ -41,6 +42,14 @@ function App() {
         </div>
        
         <TaskList/>
+
+
+         <div className='card mt-2'>
+                <div className="card-body">
+                  <h6 className='text-center text-success'>Created By Prakash Konga </h6>
+                  </div>
+              </div>
+      
       </div>
     </>
   )

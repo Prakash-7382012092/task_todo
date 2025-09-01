@@ -29,7 +29,7 @@ const TaskList = () => {
     <div className="container mt-1">
       <div className="row">
         <div className="col-md-8 mx-auto">
-          <h2 className="mb-4 text-center text-primary">Tasks</h2>
+          <h2 className="mb-4 text-center text-success">Tasks</h2>
           {tasks.length === 0 ? (
             <p className="text-center">No tasks available.</p>
           ) : (
@@ -55,9 +55,14 @@ const TaskList = () => {
                     </div>
                   </div>
                 </div>
+               
               </div>
+
+              
             ))
           )}
+
+          
         </div>
       </div>
     </div>

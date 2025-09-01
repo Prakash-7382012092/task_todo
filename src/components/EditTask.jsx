@@ -14,6 +14,7 @@ const EditTask = ({ task }) => {
     e.preventDefault(); // Prevent form refresh
     dispatch(editTask({ id: task.id, title, description, status }));
     setShow(false);
+    handleClose();
   };
 
   return (

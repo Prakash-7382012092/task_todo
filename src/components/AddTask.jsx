@@ -20,6 +20,8 @@ const AddTask = () => {
         setTitle('');
         setDescription('');
         setStatus('To Do');
+        setShow(false);
+        handleClose();
     }
   return (
     <div>
